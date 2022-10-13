@@ -1,8 +1,8 @@
 #!/bin/bash -x
-coin=$((RANDOM%2+1))
-if [$coin -eq 1]
+coin=$(($(($RANDOM%10))%2))
+if [ $coin -eq 1 ]
 then
-echo "head"
+    echo "head"
 else
-echo "tail"
+    echo "tail"
 fi
