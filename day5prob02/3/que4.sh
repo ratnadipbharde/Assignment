@@ -17,10 +17,10 @@ case $n in
         ;;
         3) echo -n "Enter feet"
         read feet
-        meter=$feet * 0.3048
+        meter=$(echo  $feet 0.3048 | awk '{ print $1*$2}')
         echo "$feet feet = $meter meter"
         ;;
-        4) echo -n "Thousnd " 
+        4) echo -n "Enter Meter " 
         ;;
     
     esac
